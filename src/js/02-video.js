@@ -6,6 +6,7 @@ const player = new Player(iframe);
 
 const TIME_PAUSE = 'videoplayer-current-time';
 let dataTime = JSON.parse(localStorage.getItem(TIME_PAUSE)) ?? 0;
+
 player.setCurrentTime(dataTime);
 
 player.on(
